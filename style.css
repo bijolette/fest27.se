@@ -10,8 +10,8 @@ html {
 
 body {
     font-family: "Montserrat", Arial, sans-serif;
-    background-color: #fb7f02;
-    color: #fefdfd;
+    background-color: #f4f2f2;
+    color: #0a0a0a;
     line-height: 1.6;
 }
 
@@ -154,4 +154,9 @@ section p {
     .info-card {
         padding: 28px 22px;
     }
+}
+.more-info {
+    margin-top: 90px;
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
