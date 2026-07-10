@@ -24,3 +24,19 @@ section {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+<<<<<<< HEAD
+=======
+
+button {
+    background: #33f16f;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #163970;
+}
+>>>>>>> 4ecb8f717cc2f604d2cd5f6b5d934f1d29f3bc95
