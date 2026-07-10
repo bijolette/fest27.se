@@ -1,115 +1,157 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-
-    font-family: "Inter", sans serif;
-    background:#f47a16;
-    color:#333;
-    line-height:1.7;
-
+html {
+    scroll-behavior: smooth;
 }
 
-.hero{
-
-    height:100vh;
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    background:linear-gradient(
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.55)
-    ),
-    url("https://uploads.naturkartan-cdn.se/ab490d8f57722a554437480544c190c5.jpg?width=1680&quality=80&optimizer=image");
-
-    background-size:cover;
-    background-position:center;
-
-    color:white;
-
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: #fb7f02;
+    color: #fefdfd;
+    line-height: 1.6;
 }
 
-.hero h1{
+/* Stor toppsektion */
 
-    font-size:5rem;
+.hero {
+    min-height: 90vh;
+    padding: 40px 24px;
 
-    letter-spacing:6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(rgba(20, 20, 20, 0.55), rgba(20, 20, 20, 0.65)),
+        url("https://uploads.naturkartan-cdn.se/ab490d8f57722a554437480544c190c5.jpg?width=1680&quality=80&optimizer=image");
+
+    background-size: cover;
+    background-position: center;
 }
 
-.hero p{
-
-    font-size:1.5rem;
-
-    margin-top:10px;
-
+.hero h1 {
+    font-size: clamp(4rem, 12vw, 8rem);
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-.hero h2{
-
-    margin-top:35px;
-
-    font-size:2rem;
-
-    font-weight:normal;
-
+.hero p {
+    margin-top: 20px;
+    font-size: 1.35rem;
 }
 
-.button{
-
-    margin-top:50px;
-
-    background:#ffb000;
-
-    color:black;
-
-    text-decoration:none;
-
-    padding:18px 40px;
-
-    border-radius:8px;
-
-    font-weight:bold;
-
-    transition:.2s;
-
+.hero h2 {
+    max-width: 700px;
+    margin-top: 24px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 500;
 }
 
-.button:hover{
+/* Knapp */
 
-    background:white;
+.button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 16px 32px;
 
+    background-color: #f6b73c;
+    color: #161616;
+
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 999px;
+
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-main{
-
-    max-width:900px;
-
-    margin:auto;
-
-    padding:80px 30px;
-
+.button:hover {
+    background-color: white;
+    transform: translateY(-3px);
 }
 
-section{
+/* Sidans innehåll */
 
-    margin-bottom:80px;
-
+main {
+    width: min(100% - 40px, 1000px);
+    margin: 0 auto;
+    padding: 90px 0;
 }
 
-h2{
-    margin-top: 50px;
-    margin-bottom: 20px;
+section {
+    margin-bottom: 100px;
 }
 
+section h2 {
+    margin-bottom: 24px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    text-align: center;
+}
 
+section p {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+    text-align: center;
+}
 
+/* Informationskort */
+
+.info-card {
+    max-width: 760px;
+    margin: 40px auto 0;
+    padding: 40px;
+
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Texten "Mer information kommer" */
+
+.more-info {
+    margin-top: 90px;
+    text-align: center;
+}
+
+/* Bild längst ner */
+
+.bottom-image {
+    margin-top: 80px;
+}
+
+.bottom-image img {
+    display: block;
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Mobil */
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 75vh;
+    }
+
+    main {
+        padding: 60px 0;
+    }
+
+    section {
+        margin-bottom: 70px;
+    }
+
+    .info-card {
+        padding: 28px 22px;
+    }
+}
