@@ -1,42 +1,113 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    color: #333;
-    margin: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    background: #0e0e0e;
-    color: rgb(240, 139, 8);
-    text-align: center;
-    padding: 50px;
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f59d06;
+    color:#333;
+    line-height:1.7;
+
 }
 
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 30px;
+.hero{
+
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("https://uploads.naturkartan-cdn.se/ab490d8f57722a554437480544c190c5.jpg?width=1680&quality=80&optimizer=image");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+
 }
 
-section {
-    background: rgb(240, 139, 8);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-<<<<<<< HEAD
-=======
+.hero h1{
 
-button {
-    background: #33f16f;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 6px;
-    cursor: pointer;
+    font-size:5rem;
+
+    letter-spacing:6px;
+
 }
 
-button:hover {
-    background: #163970;
+.hero p{
+
+    font-size:1.5rem;
+
+    margin-top:10px;
+
 }
->>>>>>> 4ecb8f717cc2f604d2cd5f6b5d934f1d29f3bc95
+
+.hero h2{
+
+    margin-top:35px;
+
+    font-size:2rem;
+
+    font-weight:normal;
+
+}
+
+.button{
+
+    margin-top:50px;
+
+    background:#ffb000;
+
+    color:black;
+
+    text-decoration:none;
+
+    padding:18px 40px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.2s;
+
+}
+
+.button:hover{
+
+    background:white;
+
+}
+
+main{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:80px 30px;
+
+}
+
+section{
+
+    margin-bottom:80px;
+
+}
+
+h2{
+
+    margin-bottom:25px;
+
+}
